@@ -1,0 +1,15 @@
+{
+  "packageManager": "npm",
+  "reporters": [
+    "html",
+    "clear-text",
+    "progress"
+  ],  
+  "mutate": ["app/**/*.ts"],
+  "mutator": {
+    "excludedMutations": ["EqualityOperator"]
+  },
+  "tsconfigFile": "tsconfig.json",
+  "testRunner": "jest",
+  "coverageAnalysis": "perTest"
+}
